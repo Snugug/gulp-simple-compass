@@ -14,7 +14,7 @@ module.exports = function (options) {
         stderr = '';
 
     if (file.isNull()) {
-      this.push(file);
+      // this.push(file);
       return cb();
     }
 
@@ -118,7 +118,7 @@ module.exports = function (options) {
     });
 
     compass.on('close', function (code, signal) {
-      this.push(file);
+      // this.push(file);
       return cb();
     });
   }
